@@ -4,6 +4,8 @@ set -eux
 apt-get update
 apt-get install -y dnsutils
 
+sleep 5
+
 dhclient -r enp0s8
 dhclient enp0s8
 
